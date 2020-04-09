@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Princess+Sofia&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="mystyles.css">
+
+    <title>La Galerie d´art de Rembrandt</title>
+  </head>
+  <body id="top" class="bg-dark">
+
+	<!-- s1_header -->
+	<section id="s1_header">
+		<aside class="container">
+			<h1 class="text-danger display-4">Rembrandt Van Rijn</h1>
+			<h5 class="text-white">Painter, Draughtsman &amp; Printmaker</h5>
+		</aside>
+	</section>
+	<style>
+		#s1_header {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+		}
+		#s1_header aside {
+			text-align: center;
+			grid-column: 2 / 4;
+			grid-row: 2 / 3;
+		}
+		@media (max-width: 992px) {
+			#s1_header { height: 50vh; }
+			#s1_header .display-4 { font-size: 28px; }
+			#s1_header h5 { font-size: 12px; }
+		}
+
+	</style>
+
+	<!-- s2_trio -->
+	<section id="s2_trio">
+		<div class="container py-5 myGrid">
+			
+			<div class="card mx-2">
+				<div class="card-body mySubGrid">
+					<img class="img-fluid border border-dark" src="img/interface-imgs/s2-prints.jpg" alt="Prints">
+					<aside>
+						<h2 class="text-danger my-2">Prints</h2>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam sint unde beatae. Tempora quaerat, neque beatae perspiciatis officiis quisquam aut.</p>
+					</aside>
+				</div>
+			</div>
+
+			<div class="card mx-2">
+				<div class="card-body mySubGrid">
+					<img class="img-fluid border border-dark" src="img/interface-imgs/s2-paintings.jpg" alt="Paintings">
+					<aside>
+						<h2 class="text-danger my-2">Paintings</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum veniam qui nobis mollitia vel ducimus sit repudiandae perferendis pariatur culpa?</p>
+					</aside>
+				</div>
+			</div>
+
+			<div class="card mx-2">
+				<div class="card-body mySubGrid">
+					<img class="img-fluid border border-dark" src="img/interface-imgs/s2-drawings.jpg" alt="Drawings">
+					<aside>
+						<h2 class="text-danger my-2">Drawings</h2>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum debitis soluta saepe corporis fugiat earum numquam deleniti dicta, hic maxime!</p>
+					</aside>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- s3_painting_of_the_week -->
+	<section class="text-center py-5" id="s3_painting_of_the_week">
+		<div class="container p-4">
+			<h1 class="text-danger">Hightlighted Painting</h1>
+			<img class="img-fluid my-3 border border-light" src="img/s3-painting-of-the-week-1640-1650.jpg" alt="Painting of the week">
+			<p class="text-white">Castle Overlooking A River (circa 1645)</p>
+		</div>
+	</section>
+
+	<!-- s4_about -->
+	<section class="py-5" id="s4_about">
+		<div class="container py-5 s4_about_grid">
+			<div class="img-selfportrait">
+				<img class="img-fluid" src="img/interface-imgs/s4-about-Rembrandt_Self-Portrait_(1637).jpg" alt="Rembrandt">
+			</div>
+			<div class="hd-about">
+				<h3 class="text-danger">About</h3>
+			</div>
+			<div class="txt-about">
+				<p><strong>Rembrandt van Rijn</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure optio illum sint eius error quidem, tempora voluptatum nulla nostrum architecto voluptatem reprehenderit animi, maiores quam vitae asperiores obcaecati harum laboriosam quaerat nobis, provident magni? Adipisci reprehenderit repudiandae praesentium doloribus quisquam, aperiam provident vero voluptatem cumque a maxime atque quis delectus</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- s5_prints -->
+	<section class="py-5" id="s5_prints">
+		<div class="container py-5">
+			<h1 class="text-danger">Prints</h1>
+			<div class="my-thumbs">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/3d_man_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/8_ball_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/a_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/abomination_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/aardwolf_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/adam_II_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/administrator_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/aegis_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/agent_zero_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/ahab_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/ajak_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/akhenaten_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/aleta_ogord_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/alex_wilder_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/alflyse_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/all_american_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/prints-img/prints-thumbs/brawn_thumb.jpg" alt="">
+				
+				<img class="img-fluid" src="img/interface-imgs/s5-prints_abyss.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<!-- s6_paintings -->
+	<section class="py-5" id="s6_paintings">
+		<div class="container py-5">
+			<h1 class="text-danger">Paintings</h1>
+			<aside>
+				<div class="my-paintings-container my-paintings-area my-cursor">
+					<div class="painting-1"></div>
+					<div class="painting-2"></div>
+					<div class="painting-3"></div>
+					<div class="painting-4"></div>
+					<div class="painting-5"></div>
+					<div class="painting-6"></div>
+					<div class="painting-7"></div>
+					<div class="painting-8"></div>
+					<div class="painting-9"></div>
+					<div class="painting-10"></div>
+				</div>
+
+				<img class="img-gluid windmill" src="img/interface-imgs/s6-painting_avengers.jpg" alt="Windmill">
+			</aside>
+		</div>
+	</section>
+
+	<!-- s7_drawings -->
+	<section class="py-5" id="s7_drawings">
+		<div class="container py-5">
+			<h1 class="text-danger">Drawings</h1>
+			<div class="my-thumbs">
+				<img class="img-fluid" src="img/drawings-img/drawings-thumbs/2020_rescue_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/drawings-img/drawings-thumbs/black_panther_and_the_agents_of_wakanda_thumb.jpg" class="img-fluid" alt="">
+				<img class="img-fluid" src="img/drawings-img/drawings-thumbs/age_of_ultron_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/drawings-img/drawings-thumbs/black_widow_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/drawings-img/drawings-thumbs/captain_america_marvels_snapshots_thumb.jpg" alt= class="img-fluid""">
+				<img class="img-fluid" src="img/drawings-img/drawings-thumbs/conan_batle_for_the_serpent_crown_thumb.jpg" alt= class="img-fluid""">
+				<img class="img-fluid" src="img/drawings-img/drawings-thumbs/magnificient_ms_marvel_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/drawings-img/drawings-thumbs/power_pack_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/drawings-img/drawings-thumbs/runaways_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/drawings-img/drawings-thumbs/spider_man_noir_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/drawings-img/drawings-thumbs/sword_master_thumb.jpg" alt="">
+				<img class="img-fluid" src="img/drawings-img/drawings-thumbs/x_men_god_loves_thumb.jpg" alt="">
+				
+				<img class="img-fluid" src="img/interface-imgs/s7-drawing_ace.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<!-- s8_contact -->
+	<section class="py-5" id="s8_contact">
+		<div class="container py-5 contact_grid">
+			<aside class="contact-copy">
+				<h1>Contact</h1>
+				<p>
+					La Galerie d´art de Rembrandt <br>
+					182 N. Union Ave <br>
+					Farmington, UT 84025 <br>
+					555-1234 <br>
+					roremipsum@email.com
+				</p>
+			</aside>
+	
+			<p class="contact-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.624931568149!2d-99.20894978484709!3d19.42860504584228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201f60a8f816b%3A0xca7e9b8e9149aac2!2sGoogle!5e0!3m2!1ses!2smx!4v1586209299925!5m2!1ses!2smx" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen></iframe></p>
+	
+			<img class="img-fluid contact-picture" src="img/interface-imgs/s8-contact-apache_kid.jpg" alt="">
+		</div>
+	</section>
+
+	<!-- s9_footer -->
+	<section class="text-white" id="s9_footer">
+		<div class="container s9_footer_grid py-5">
+			<aside class="footer_hours" style="grid-area: footer_hours;">
+				<h1 class="text-danger h3">La Galerie d´art de Rembrandt</h1>
+				<p>
+					Tuesday - Friday: 10:00 am - 5:00 pm <br>
+					Saturday: 10:00 am - 3:00 pm <br>
+					Closed Sundays and Mondays
+				</p>
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-linkedin-in"></i>
+				<i class="fab fa-instagram"></i>
+			</aside>
+	
+			<aside class="footer_menu" style="grid-area: footer_menu;">
+				<h1 class="text-danger h5">Menu</h1>
+				<ul class="list-unstyled">
+					<li>Home</li>
+					<li>Paintings, Drawings and Prints</li>
+					<li>Painting of the Week</li>
+					<li>About Rembrandt</li>
+					<li>Prints</li>
+					<li>Paintings</li>
+					<li>Drawings</li>
+					<li>Contacts</li>
+				</ul>
+			</aside>
+
+			<aside class="footer_museum" style="grid-area: footer_museum;">
+				<h1 class="text-danger h5">Some Museums Showing Rembrandts</h1>
+				<ul class="list-unstyled">
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+				</ul>
+			</aside>
+
+			<aside class="footer_painting_names" style="grid-area: footer_painting_names;">
+				<h1 class="text-danger h5">Painting Names</h1>
+				<ul class="list-unstyled">
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+				</ul>
+			</aside>
+
+			<aside class="footer_links" style="grid-area: footer_links;">
+				<h1 class="text-danger h5">Other Links</h1>
+				<ul class="list-unstyled">
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+					<li>xxx</li>
+				</ul>
+			</aside>
+
+			<aside class="footer_img" style="grid-area: footer_img;">
+				<img class="img-fluid" src="img/interface-imgs/s9-footer_captain_america.png" alt="Logo">
+			</aside>
+		</div>
+	</section>
+
+	<!-- s10_copyright -->
+	<section class="text-white bg-dark small my-5 text-center" id="s10_copyright">
+		<div>
+			<p>&copy; <script>document.write(new Date().getFullYear());</script> Whatever. All rights reserved.</p>
+		</div>
+	</section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function () {
+			$('a[href^="#"]').on('click', function (e) {
+				e.preventDefault();
+
+				let target = this.hash,
+				$target = $(target);
+
+				$('html','body').stop().animate({
+					'scrollTop': $target.offset().top
+				}, 900, 'swing', function () {
+					window.location.hash = target;
+				});
+			});
+		});
+	</script>
+  </body>
+</html>
+

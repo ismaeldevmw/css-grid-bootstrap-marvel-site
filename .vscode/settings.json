@@ -1,0 +1,17 @@
+{
+	"workbench.colorCustomizations": {
+		"titleBar.activeBackground": "#ff2c70",
+		"titleBar.inactiveBackground": "#ff2c70cc",
+		"titleBar.activeForeground": "#fff",
+		"titleBar.inactiveForeground": "#fff000cc"
+	},
+	"beautify.language": {
+		"js": {
+		  "type": ["javascript", "json"],
+		  "filename": [".jshintrc", ".jsbeautifyrc"],
+		  "ext": ["js", "json"]
+		},
+		"css": ["css", "scss"],
+		"html": ["htm", "html"]
+	  }
+}
