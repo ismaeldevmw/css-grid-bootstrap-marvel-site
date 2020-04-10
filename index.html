@@ -17,6 +17,30 @@
   </head>
   <body id="top" class="bg-dark">
 
+	<!-- 00 NAVBAR -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand text-danger" href="#top">La Galerie d´art de Rembrandt</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-items"><a href="#s2_trio" class="nav-link">Works</a></li>
+					<li class="nav-items"><a href="#s3_painting_of_the_week" class="nav-link">Hightlighted Painting</a></li>
+					<li class="nav-items"><a href="#s4_about" class="nav-link">About</a></li>
+					<li class="nav-items"><a href="#s5_prints" class="nav-link">Prints</a></li>
+					<li class="nav-items"><a href="#s6_paintings" class="nav-link">Paintings</a></li>
+					<li class="nav-items"><a href="#s7_drawings" class="nav-link">Drawings</a></li>
+					<li class="nav-items"><a href="#s8_contact" class="nav-link">Contact</a></li>
+					<li class="nav-items"><a href="#s9_footer" class="nav-link">Info</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
 	<!-- s1_header -->
 	<section id="s1_header">
 		<aside class="container">
@@ -84,7 +108,7 @@
 	<section class="text-center py-5" id="s3_painting_of_the_week">
 		<div class="container p-4">
 			<h1 class="text-danger">Hightlighted Painting</h1>
-			<img class="img-fluid my-3 border border-light" src="img/s3-painting-of-the-week-1640-1650.jpg" alt="Painting of the week">
+			<img class="img-fluid my-3 border border-light" src="img/s3-painting-of-the-week-1640-1650.jpg" alt="Painting of the week" style="border-width: 3px!important;">
 			<p class="text-white">Castle Overlooking A River (circa 1645)</p>
 		</div>
 	</section>
@@ -138,7 +162,7 @@
 			<h1 class="text-danger">Paintings</h1>
 			<aside>
 				<div class="my-paintings-container my-paintings-area my-cursor">
-					<div class="painting-1"></div>
+					<div class="painting-1" data-toggle="modal" data-target="#painting1"></div>
 					<div class="painting-2"></div>
 					<div class="painting-3"></div>
 					<div class="painting-4"></div>
@@ -208,10 +232,14 @@
 					Saturday: 10:00 am - 3:00 pm <br>
 					Closed Sundays and Mondays
 				</p>
-				<i class="fab fa-facebook-square"></i>
-				<i class="fab fa-twitter"></i>
-				<i class="fab fa-linkedin-in"></i>
-				<i class="fab fa-instagram"></i>
+				<div class="btn-toolbar" role="toolbar" aria-label="Social Media Buttons">
+					<div class="btn-group m-2 btn-group-sm">
+						<button type="button" class="btn btn-info"><i class="fab fa-facebook-square"></i></button>
+						<button type="button" class="btn btn-info"><i class="fab fa-twitter"></i></button>
+						<button type="button" class="btn btn-info"><i class="fab fa-linkedin-in"></i></button>
+						<button type="button" class="btn btn-info"><i class="fab fa-instagram"></i></button>
+					</div>
+				</div>
 			</aside>
 	
 			<aside class="footer_menu" style="grid-area: footer_menu;">
@@ -285,7 +313,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script>
@@ -296,7 +324,7 @@
 				let target = this.hash,
 				$target = $(target);
 
-				$('html','body').stop().animate({
+				$('html, body').stop().animate({
 					'scrollTop': $target.offset().top
 				}, 900, 'swing', function () {
 					window.location.hash = target;
@@ -304,6 +332,24 @@
 			});
 		});
 	</script>
+
+	<!-- --------------- PAINTING-1 --------------- -->
+	<div class="modal fade" id="painting1" tabindex="1" role="dialog" aria-labelledby="Rembrandt Painting 1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal" aria-label="close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<div class="modal-body">
+					<img src="img/paintings-img/blackwidow_lob_crd_04.jpg" alt="" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+
   </body>
 </html>
 

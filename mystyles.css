@@ -224,6 +224,11 @@
 	justify-self: end;
 	align-self: end;
 }
+@media (max-width: 576px) {
+	.windmill {
+		display: none;
+	}
+}
 
 .painting-1 {
 	background: url("img/paintings-img/blackwidow_lob_crd_04.jpg");
