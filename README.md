@@ -1,4 +1,4 @@
-#Creating a Site with CSS Grid and Bootstrap 4
+# Web site built with CSS Grid and Bootstrap 4
 
 ## Achievemnents
 + Using Boostrap Styles
